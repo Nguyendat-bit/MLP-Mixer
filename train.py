@@ -16,7 +16,6 @@ if __name__ == '__main__':
     parser.add_argument('--train-folder', type= str, required= True)
     parser.add_argument('--valid-folder', type= str, default= None)
     parser.add_argument('--epochs', default= 100, type= int)
-    parser.add_argument('--classes', default= 5, type= int)
     parser.add_argument('--lr', default= 0.07, type= float)
     parser.add_argument('--shuffle', default= True, type= bool)
     parser.add_argument('--augmented', default= False, type= bool)
@@ -27,7 +26,7 @@ if __name__ == '__main__':
     parser.add_argument('--hidden-size', default= 512, type= int)
     parser.add_argument('--Dc', default= 2048, type= int)
     parser.add_argument('--Ds', default= 256, type = int )
-    parser.add_argument('--dropout', default= 0.0, type= float)
+    parser.add_argument('--dropout', default= 0.2, type= float)
     parser.add_argument('--optimizer', default= 'adam', type= str)
     parser.add_argument('--model-save', default= 'mlp_mixer.h5', type= str)
     try:
@@ -95,7 +94,7 @@ if __name__ == '__main__':
     mlp_mixer.compile(optimizer= optimizer, loss= loss, metrics= ['acc'])
 
     # Training model 
-    print('-------------Training Mobilenet_V2------------')
+    print('-------------Training MLP-Mixer------------')
     mlp_mixer.fit(train_data, validation_data= val_data, epochs= args.epochs, verbose= 1, callbacks= [checkpoint, lr_R])
 
 

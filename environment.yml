@@ -1,4 +1,4 @@
-name: MobilenetV2
+name: mlp-mixer
 channels:
   - defaults
 dependencies:
@@ -11,5 +11,5 @@ dependencies:
     - numpy
     - pandas
     - sklearn
-    - tensorflow==2.5.0
-prefix: C:\Users\ADMIN\miniconda3\envs\MobilenetV2
+    - tensorflow==2.6.0
+prefix: C:\Users\ADMIN\miniconda3\envs\mlp-mixer
