@@ -1,5 +1,5 @@
 # MLP-Mixer
-My project is using the TensorFlow framework to implement the [MLP-Mixer model](https://arxiv.org/abs/2105.01601) to classify flower images. <br>
+My project is using the TensorFlow framework to implement the [MLP-Mixer model](https://arxiv.org/abs/2105.01601). <br>
 Give me a star :star2: if you like this repo.
 
 ### Model Architecture
